@@ -10,5 +10,25 @@ import { RouterOutlet } from '@angular/router';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'portfolio';
+
+  isMenuOpen = false;
+
+  toggleMenu() {
+    this.isMenuOpen = !this.isMenuOpen;
+  }
+
+  scrollToSection(sectionId: string) {
+
+    const section = document.getElementById(sectionId); 
+  
+    if(section) {
+  
+      const block = window.innerWidth < 768 ? 'start' : 'center';
+  
+      section.scrollIntoView({
+        behavior: 'smooth',
+        block 
+      });
+    }
+  }
 }

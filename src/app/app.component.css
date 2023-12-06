@@ -1,0 +1,26 @@
+.fondo{
+    background-image: url("../assets/img/fondo.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.myname {
+    display: block;
+    font-family: monospace;
+    white-space: nowrap;
+    border-right: 4px solid;
+    width: 16ch;
+    animation: 
+      typing 2s steps(16), 
+      blink .5s infinite step-end alternate; 
+    overflow: hidden;
+    
+  }
+  
+  @keyframes typing {
+    from { width: 0 }
+  }   
+  
+  @keyframes blink {
+    50% { border-color: transparent }  
+  }
