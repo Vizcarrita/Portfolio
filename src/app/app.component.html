@@ -1,53 +1,6 @@
-<div class="fondo ">
-  <header>
-    <nav class="p-4 bg-transparent">
-      <div class="container mx-auto flex justify-between md:justify-center items-center">
-        <ul class="hidden md:flex space-x-8 cursor-pointer">
-          <li class="mx-4 md:my-0 hover:border-b-2" (click)="scrollToSection('section1')">
-            <a class="text-[#121212] hover:text-[#f2f2f2]">Inicio</a>
-          </li>
-          <li class="mx-4 md:my-0 hover:border-b-2" (click)="scrollToSection('section2')">
-            <a class="text-[#121212] hover:text-[#f2f2f2]">Sobre Mi</a>
-          </li>
-          <li class="mx-4 md:my-0 hover:border-b-2" (click)="scrollToSection('section3')">
-            <a class="text-[#121212] hover:text-[#f2f2f2]">Habilidades</a>
-          </li>
-          <li class="mx-4 md:my-0 hover:border-b-2" (click)="scrollToSection('section4')">
-            <a class="text-[#121212] hover:text-[#f2f2f2]">Proyectos</a>
-          </li>
-          <li class="mx-4 md:my-0 hover:border-b-2" (click)="scrollToSection('section5')">
-            <a class="text-[#121212] hover:text-[#f2f2f2]">Contactame</a>
-          </li>
-        </ul>
-        <div class="lg:hidden relative left-[95%]">
-          <!-- Icono de hamburguesa para dispositivos móviles -->
-          <button class="text-[#f2f2f2]" (click)="toggleMenu()">
-            <i class="fa-solid fa-bars text-2xl cursor-pointer"></i>
-          </button>
-        </div>
-      </div>
-      <div *ngIf="isMenuOpen" class="md:hidden py-2 bg-transparent">
-        <!-- Enlaces del menú para dispositivos móviles -->
-        <ul class="block">
-          <li class="mx-4 md:my-0" (click)="scrollToSection('section1')">
-            <a class="text-[#f2f2f2] hover:text-[#121212]">Inicio</a>
-          </li>
-          <li class="mx-4 md:my-0" (click)="scrollToSection('section2')">
-            <a class="text-[#f2f2f2] hover:text-[#121212]">Sobre Mi</a>
-          </li>
-          <li class="mx-4 md:my-0" (click)="scrollToSection('section3')">
-            <a class="text-[#f2f2f2] hover:text-[#121212]">Habilidades</a>
-          </li>
-          <li class="mx-4 md:my-0" (click)="scrollToSection('section4')">
-            <a class="text-[#f2f2f2] hover:text-[#121212]">Proyectos</a>
-          </li>
-          <li class="mx-4 md:my-0" (click)="scrollToSection('section5')">
-            <a class="text-[#f2f2f2] hover:text-[#121212]">Contactame</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-  </header>
+<div class="fondo">
+  <app-header/>
+<!-- 
   <section class="relative flex items-center bg-transparent" id="section1">
     <div class="container relative flex px-6 py-16 mx-auto">
         <div class="relative flex flex-col sm:w-2/3 lg:w-2/5 justify-center">
@@ -72,7 +25,8 @@
             <img src="../assets/img/profile.webp" class="w-80 m-auto h-80 rounded-full bg-[length:600px_600px]"/>
         </div>
     </div>
-  </section>
+  </section> -->
+
   <section class="inline-block max-w-max py-8 lg:py-16 px-4 bg-[#f2f2f2] dark:bg-gray-900" id="section2">
     <div class="">
       <h2 class="text-4xl tracking-tight font-extrabold text-center text-gray-900 dark:text-[#f2f2f2]">Sobre mí</h2>
