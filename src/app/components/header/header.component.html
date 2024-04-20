@@ -1,8 +1,9 @@
 <header class="fixed top-0 z-10 flex items-center justify-center w-full mx-auto mt-2">
     <nav class="flex px-3 text-sm font-medium rounded-full text-[#f2f2f2] justify-center items-center shadow-lg ring-1 backdrop-blur bg-gray-800/90  ring-white/10">
-        <a class="relative block px-2 py-2 transition hover:text-yellow-500 dark:hover:text-yellow-400" href="/">Inicio</a>
-        <a class="relative block px-2 py-2 transition hover:text-yellow-500 dark:hover:text-yellow-400" href="/">Sobre Mi</a>
-        <a class="relative block px-2 py-2 transition hover:text-yellow-500 dark:hover:text-yellow-400" href="/">Proyectos</a>
-        <a class="relative block px-2 py-2 transition hover:text-yellow-500 dark:hover:text-yellow-400" href="/">Contactame</a>
+        <a class="relative block px-2 py-2 transition hover:text-yellow-400 cursor-pointer" (click)="scrollToSection('section1')">Inicio</a>
+        <a class="relative block px-2 py-2 transition hover:text-yellow-400 cursor-pointer" (click)="scrollToSection('section2')">Proyectos</a>
+        <a class="relative block px-2 py-2 transition hover:text-yellow-400 cursor-pointer" (click)="scrollToSection('section3')">Habilidades</a>
+        <a class="relative block px-2 py-2 transition hover:text-yellow-400 cursor-pointer" (click)="scrollToSection('section4')">Sobre Mi</a>
+        <a class="relative block px-2 py-2 transition hover:text-yellow-400 cursor-pointer" (click)="scrollToSection('section5')"><i class="fa-solid fa-envelope"></i></a>
     </nav>
   </header>

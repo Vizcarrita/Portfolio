@@ -11,4 +11,21 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
   styleUrl: './header.component.css',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class HeaderComponent { }
+export class HeaderComponent { 
+
+  scrollToSection(sectionId: string) {
+
+    const section = document.getElementById(sectionId); 
+  
+    if(section) {
+  
+      const block = window.innerWidth < 768 ? 'start' : 'center';
+  
+      section.scrollIntoView({
+        behavior: 'smooth',
+        block 
+      });
+    }
+  }
+
+}
