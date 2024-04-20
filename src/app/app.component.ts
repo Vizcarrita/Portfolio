@@ -4,11 +4,12 @@ import { RouterOutlet } from '@angular/router';
 import { HeaderComponent } from './components/header/header.component';
 import { HeroComponent } from './pages/hero/hero.component';
 import { ProyectosComponent } from './pages/proyectos/proyectos.component';
+import { HabilidadesComponent } from './pages/habilidades/habilidades.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, RouterOutlet,HeaderComponent,HeroComponent,ProyectosComponent],
+  imports: [CommonModule, RouterOutlet,HeaderComponent,HeroComponent,ProyectosComponent,HabilidadesComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
