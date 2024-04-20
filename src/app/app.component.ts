@@ -5,11 +5,12 @@ import { HeaderComponent } from './components/header/header.component';
 import { HeroComponent } from './pages/hero/hero.component';
 import { ProyectosComponent } from './pages/proyectos/proyectos.component';
 import { HabilidadesComponent } from './pages/habilidades/habilidades.component';
+import { ContactameComponent } from './pages/contactame/contactame.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, RouterOutlet,HeaderComponent,HeroComponent,ProyectosComponent,HabilidadesComponent],
+  imports: [CommonModule, RouterOutlet,HeaderComponent,HeroComponent,ProyectosComponent,HabilidadesComponent,ContactameComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
