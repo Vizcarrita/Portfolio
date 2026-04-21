@@ -12,11 +12,10 @@ export const Proyectos = [
 ]
 
 @Component({
-  selector: 'app-proyectos',
-  standalone: true,
-  imports: [],
-  templateUrl: './proyectos.component.html',
-  styleUrl: './proyectos.component.css'
+    selector: 'app-proyectos',
+    imports: [],
+    templateUrl: './proyectos.component.html',
+    styleUrl: './proyectos.component.css'
 })
 export class ProyectosComponent {
 

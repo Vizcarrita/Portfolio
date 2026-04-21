@@ -9,11 +9,10 @@ import { ContactameComponent } from './pages/contactame/contactame.component';
 import { SobreMiComponent } from './pages/sobre-mi/sobre-mi.component';
 
 @Component({
-  selector: 'app-root',
-  standalone: true,
-  imports: [CommonModule, RouterOutlet,HeaderComponent,HeroComponent,ProyectosComponent,HabilidadesComponent,ContactameComponent,SobreMiComponent],
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+    selector: 'app-root',
+    imports: [CommonModule, RouterOutlet, HeaderComponent, HeroComponent, ProyectosComponent, HabilidadesComponent, ContactameComponent, SobreMiComponent],
+    templateUrl: './app.component.html',
+    styleUrl: './app.component.css'
 })
 export class AppComponent {
 
