@@ -1,10 +1,12 @@
 import { TestBed } from '@angular/core/testing';
+import { provideZonelessChangeDetection } from '@angular/core';
 import { AppComponent } from './app.component';
 
 describe('AppComponent', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       imports: [AppComponent],
+      providers: [provideZonelessChangeDetection()],
     }).compileComponents();
   });
 
@@ -14,16 +16,18 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have the 'portfolio' title`, () => {
+  it('should have isMenuOpen as false by default', () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('portfolio');
+    expect(app.isMenuOpen).toBe(false);
   });
 
-  it('should render title', () => {
+  it('should toggle isMenuOpen when toggleMenu is called', () => {
     const fixture = TestBed.createComponent(AppComponent);
-    fixture.detectChanges();
-    const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('h1')?.textContent).toContain('Hello, portfolio');
+    const app = fixture.componentInstance;
+    app.toggleMenu();
+    expect(app.isMenuOpen).toBe(true);
+    app.toggleMenu();
+    expect(app.isMenuOpen).toBe(false);
   });
 });
