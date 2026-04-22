@@ -1,14 +1,46 @@
 <!doctype html>
-<html lang="en">
+<!-- lang="es" es crítico: el sitio está en español. Afecta SEO y lectores de pantalla. -->
+<html lang="es">
 <head>
   <meta charset="utf-8">
-  <title>Portfolio de Mattias Vizcarra - Desarrollador y Programador Web</title>
+
+  <!-- Título de la pestaña y resultado en Google (50-60 caracteres ideal) -->
+  <title>Mattias Vizcarra — Desarrollador Web Angular &amp; Node.js</title>
+
+  <!--
+    Meta description: el texto que Google muestra bajo el título en resultados de búsqueda.
+    Es el campo SEO más importante después del título (150-160 caracteres ideal).
+  -->
+  <meta name="description" content="Portafolio de Mattias Vizcarra, Analista Programador y Desarrollador Web especializado en Angular y Node.js. Con experiencia en proyectos reales para empresas como ENAEX y Ecopetro. Disponible para trabajar.">
+
+  <!-- Metadatos básicos -->
+  <meta name="author" content="Mattias Vizcarra">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#1f2937">
+
   <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!--
+    Open Graph: controla cómo se ve el enlace al compartirlo en LinkedIn, WhatsApp, Twitter, etc.
+    Cambiar og:url y og:image por la URL real del sitio cuando esté desplegado.
+  -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://mattiasvizcarra.dev/">
+  <meta property="og:title" content="Mattias Vizcarra — Desarrollador Web Angular &amp; Node.js">
+  <meta property="og:description" content="Analista Programador especializado en Angular y Node.js. Portafolio con proyectos reales para empresas como ENAEX y Ecopetro.">
+  <meta property="og:image" content="https://mattiasvizcarra.dev/assets/img/profile.webp">
+
+  <!-- Canonical: evita problemas de contenido duplicado si el sitio tiene múltiples URLs -->
+  <link rel="canonical" href="https://mattiasvizcarra.dev/">
+
   <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+  <!-- Font Awesome para íconos (LinkedIn, GitHub, sobre, etc.) -->
   <script src="https://kit.fontawesome.com/f2c290d682.js" crossorigin="anonymous"></script>
 </head>
 <body class="flex flex-col min-h-screen relative">
   <app-root></app-root>
 </body>
 </html>
+

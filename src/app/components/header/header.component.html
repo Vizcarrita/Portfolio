@@ -1,9 +1,14 @@
+<!-- Barra de navegación fija con efecto glassmorphism -->
 <header class="fixed top-0 z-10 flex items-center justify-center w-full mx-auto mt-2">
-    <nav class="flex px-3 text-sm font-medium rounded-full text-[#f2f2f2] justify-center items-center shadow-lg ring-1 backdrop-blur bg-gray-800/90  ring-white/10">
-        <a class="relative block px-2 py-2 transition hover:text-yellow-400 cursor-pointer" (click)="scrollToSection('section1')">Inicio</a>
-        <a class="relative block px-2 py-2 transition hover:text-yellow-400 cursor-pointer" (click)="scrollToSection('section2')">Proyectos</a>
-        <a class="relative block px-2 py-2 transition hover:text-yellow-400 cursor-pointer" (click)="scrollToSection('section3')">Habilidades</a>
-        <a class="relative block px-2 py-2 transition hover:text-yellow-400 cursor-pointer" (click)="scrollToSection('section4')">Sobre Mi</a>
-        <a class="relative block px-2 py-2 transition hover:text-yellow-400 cursor-pointer" (click)="scrollToSection('section5')"><i class="fa-solid fa-envelope"></i></a>
-    </nav>
-  </header>
+  <nav class="flex px-3 text-sm font-medium rounded-full text-[#f2f2f2] justify-center items-center shadow-lg ring-1 backdrop-blur bg-gray-800/90 ring-white/10">
+    <!-- Botones de scroll: son acciones (no links), por eso se usa <button> -->
+    <button type="button" class="relative block px-2 py-2 transition hover:text-yellow-400 cursor-pointer" (click)="scrollToSection('section1')">Inicio</button>
+    <button type="button" class="relative block px-2 py-2 transition hover:text-yellow-400 cursor-pointer" (click)="scrollToSection('section2')">Proyectos</button>
+    <button type="button" class="relative block px-2 py-2 transition hover:text-yellow-400 cursor-pointer" (click)="scrollToSection('section3')">Habilidades</button>
+    <button type="button" class="relative block px-2 py-2 transition hover:text-yellow-400 cursor-pointer" (click)="scrollToSection('section4')">Sobre Mí</button>
+    <!-- aria-label necesario porque el botón solo tiene un ícono (sin texto visible) -->
+    <button type="button" class="relative block px-2 py-2 transition hover:text-yellow-400 cursor-pointer" aria-label="Ir a Contacto" (click)="scrollToSection('section5')">
+      <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+    </button>
+  </nav>
+</header>
